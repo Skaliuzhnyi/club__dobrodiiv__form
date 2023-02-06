@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#113352">
+  <title>Club_Dobrodiiv_form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css"
+    integrity="sha512-YdYyWQf8AS4WSB0WWdc3FbQ3Ypdm0QCWD2k4hgfqbQbRCJBEgX0iAegkl2S1Evma5ImaVXLBeUkIlP6hQ1eYKQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a class="header__logo" href="#"><img class="header__logo" src="img/logo.svg" alt="логотип"></a>
+      <a class="header__link" href="#">Повернутись<br> на сайт</a>
+    </div>
+  </div>
+</header>
+
+
+<main class="main">
+
+  <div class="container">
+    <h1 class="title__color">Заявка на отримання допомоги</h1>
+
+    <div class="form">
+
+      <h2>Ідентифікація особи</h2>
+
+      <div class="form__group">
+        <div class="form__group-inner">
+          <div class="form__row two__columns form__row-margin-40">
+            <div class="form__field">
+              <label>Ваш телефон <span>*</span></label>
+              <input class="input__phone text" type="tel" placeholder="+_ _ _ (_ _) _ _ _-_ _-_ _" required>
+            </div>
+          </div>
+
+          <div class="form__row two__columns form__row-margin-100">
+            <div class="form__field">
+              <label>Прізвище <span>*</span></label>
+              <input class="text" type="text" required disabled>
+            </div>
+
+            <div class="form__field">
+              <label>Ім’я <span>*</span></label>
+              <input class="text" type="text" required>
+            </div>
+
+            <div class="form__field">
+              <label>По-батькові <span>*</span></label>
+              <input class="text" type="text" required>
+            </div>
+
+            <div class="form__field">
+              <label>Email <span>*</span></label>
+              <input class="text" type="text" required>
+            </div>
+
+            <div class="form__field">
+              <label>Дата народження <span>*</span></label>
+              <input class="text" type="text" data-toggle="datepicker" required>
+            </div>
+          </div>
+
+          <div class="form__row form__row-margin-70">
+            <div class="form__field">
+              <label>Документи, що підтверджують особу <span>*</span></label>
+
+              <div class="file-wrapper file-wrapper__info-larg">
+                <div class="file-info">
+                  <div class="file-info__text">
+                    <p>
+                      Завантажте, будь ласка, фото (усі сторінки з відмітками) або скріншот із Дії, що підтверджує вашу
+                      особу:
+                    </p>
+                    <ul>
+                      <li>Паспорт громадянина України</li>
+                      <li>ID-картка разом із довідкою про реєстрацію місця проживання</li>
+                      <li>Посвідка на постійне проживання</li>
+                      <li>Посвідка на тимчасове проживання</li>
+                      <li>Тимчасове посвідчення громадянина України</li>
+                    </ul>
+                    <p>Нам дуже важливо отримати документи для підтвердження вашого статусу і прозорості надання
+                      допомоги.
+                      Ця інформація залишається конфіденційною і ніде не поширюється.</p>
+                    <p>Завантажте до 3 файлів. (jpg, png до 2Мб)</p>
+                  </div>
+
+                  <div class="file-info__file">
+                    <div class="content__file content__file--download">
+                      <span class="content__file-icon"></span>
+                      <span class="content__file-text">93579296_165669858016624.jpg</span>
+                    </div>
+                    <div class="content__file content__file--downloading">
+                      <span class="content__file-icon"></span>
+                      <span class="content__file-text">завантаженя</span>
+                    </div>
+                    <div class="content__file content__file--error">
+                      <span class="content__file-icon"></span>
+                      <span class="content__file-text">помилка завантаження</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="file-btn">
+                  <label class="file-btn__label">
+                    <input type="file" name="doc" id="doc" multiple required>
+                    <div>Прикріпити</div>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="form__row form__row-wide form__row-checkbox-padding">
+
+            <div class="form__field">
+              <label>Підтвердження достовірності <span>*</span></label>
+
+              <div class="desc__pre">Заповнюючи цю анкету, гарантую, що вся подана в даному документі інформація
+                є
+                правдивою, повною і точною. При цьому я усвідомлюю, що в разі подання мною неповних або
+                недостовірних.</div>
+
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox" required>
+                <span class="checkbox__box"></span>
+                <div class="checkbox__text"><span>*</span> Гарантую достовірність інформації</div>
+              </label>
+
+              <p>Підтвердіть, що ви ознайомились із <a href="#">правилами надання допомоги</a> від Клубу Добродіїв</p>
+
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox" required>
+                <span class="checkbox__box"></span>
+                <div class="checkbox__text"><span>*</span> Ознайомлений з правилами надання допомоги</div>
+              </label>
+
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox" required>
+                <span class="checkbox__box"></span>
+                <div class="checkbox__text"><span>*</span> Згода на обробку персональних даних</div>
+              </label>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>Інформація про родину</h2>
+
+      <div class="form__group">
+        <div class="form__group-inner">
+          <div class="form__row form__row-margin-70">
+            <div class="form__field">
+              <label>Історія родини <span>*</span></label>
+
+              <div class="desc__pre">
+                <p>Розкажіть, будь ласка, більше про ситуацію, що склалась
+                  із вашою
+                  родиною (звідки ви, який ваш шлях з початку війни та яка ваша історія)</p>
+              </div>
+
+              <textarea class="textarea__input" type="textarea"></textarea>
+
+              <label class="checkbox checkbox__after">
+                <input class="checkbox__input" type="checkbox" required>
+                <span class="checkbox__box"></span>
+                <div class="checkbox__text">Згода на публікацію історії</div>
+              </label>
+            </div>
+          </div>
+
+          <div class="form__row form__row-group form__row-column form__row-margin-70">
+            <div class="form__field">
+              <label>Історія родини <span>*</span></label>
+
+              <div class="desc__pre">
+                <p>Ви можете потребувати допомоги, хоча намагаєтесь триматись та справлятись
+                  самотужки. Іноді це може виходити, іноді ні. Якщо це про вас, поставте, будь ласка, 5.</p>
+                <p>Якщо ви на межі відчаю і не розумієте як виживати з дітьми завтра/післязавтра — поставте, будь ласка,
+                  1.</p>
+                <p>Ця інформація не вплине на надання вам допомоги. Якщо ви будете верифіковані для надання допомоги, ви
+                  отримаєте допомогу протягом 30 днів.</p>
+              </div>
+
+
+              <div class="form__field-inner">
+
+                <label class="radio__container">
+                  <input checked class="radio" type="radio" name="level" required>
+                  <span class="radio__box"></span>
+                  <span class="radio__text">1</span>
+                </label>
+
+                <label class="radio__container">
+                  <input class="radio" type="radio" name="level" required>
+                  <span class="radio__box"></span>
+                  <span class="radio__text">2</span>
+                </label>
+
+                <label class="radio__container">
+                  <input class="radio" type="radio" name="level" required>
+                  <span class="radio__box"></span>
+                  <span class="radio__text">Приклад довгого значення окремого пункту</span>
+                </label>
+
+                <label class="radio__container">
+                  <input class="radio" type="radio" name="level" required>
+                  <span class="radio__box"></span>
+                  <span class="radio__text">3</span>
+                </label>
+
+                <label class="radio__container">
+                  <input class="radio" type="radio" name="level" required>
+                  <span class="radio__box"></span>
+                  <span class="radio__text">5</span>
+                </label>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="form__row form__row-margin-70">
+            <div class="form__field">
+              <label class="checkbox checkbox__pre">
+                <input class="checkbox__input" type="checkbox" data-master="field-org-list" data-display="hide">
+                <span class="checkbox__box"></span>
+                <div class="checkbox__text">Просили про допомогу в інших організаціях</div>
+              </label>
+            </div>
+
+            <div class="form__field field-org-list hide">
+              <div class="desc__pre">
+                <p>Перелік організацій</p>
+              </div>
+              <textarea class="textarea__input" type="textarea" name="org-list" data-required disabled></textarea>
+            </div>
+          </div>
+
+          <div class="form__row form__row-margin-70">
+            <div class="form__field">
+              <label class="checkbox checkbox__pre">
+                <input class="checkbox__input" type="checkbox" data-master="field-help-list">
+                <span class="checkbox__box"></span>
+                <div class="checkbox__text">Отримували допомогу від інших органцізацій</div>
+              </label>
+            </div>
+
+            <div class="form__field field-help-list disabled">
+              <div class="desc__pre">
+                <p>Перелік організацій</p>
+              </div>
+              <textarea class="textarea__input" type="textarea" name="help-list" data-required disabled></textarea>
+            </div>
+          </div>
+
+          <div class="form__row two__columns form__row-margin-70">
+            <div class="form__field">
+              <label>Кількість разів отримання допомоги</label>
+              <div class="quantity__block">
+                <button class="quantity__arrow quantity__arrow--plus" type="button"></button>
+                <input class="quantity__number number" type="number" min="1" max="100" step="1" value="">
+                <button class="quantity__arrow quantity__arrow--minus" type="button"></button>
+              </div>
+            </div>
+            <div class="form__field">
+              <label>Категорія родини <span>*</span></label>
+              <select class="js-choice" name="select" required>
+                <option value="" selected></option>
+                <option>Виховую дітей самостійно</option>
+                <option>Вихали з прифронтових або тимчасово окупованих територій </option>
+                <option>Інше</option>
+              </select>
+            </div>
+            <div class="form__field">
+              <label>Потрібний розмір підгузків для вашої дитини <span>*</span></label>
+              <div class="desc__pre">
+                <p>Якщо у ваших дітей немає потреби в підгузках, просто пропустіть це питання</p>
+              </div>
+              <input class="text" type="text">
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="form__field">
+              <label>Документи, що підтверджують статус <span>*</span></label>
+
+              <div class="file-wrapper file-wrapper__info-small">
+                <div class="file-info">
+                  <div class="file-info__text">
+                    <p>завантажте до 3-х файліів (jpg, png до 2Мб)</p>
+                  </div>
+
+                  <div class="file-info__file">
+                    <div class="content__file content__file--download">
+                      <span class="content__file-icon"></span>
+                      <span class="content__file-text">93579296_165669858016624.jpg</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="file-btn">
+                  <label class="file-btn__label">
+                    <input type="file" name="doc" id="doc" multiple required>
+                    <div>Прикріпити</div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="childrens">
+        <div class="child__list">
+          <div class="form__group form__group-color children__info">
+
+            <h2 class="title__color">Інформація про дитину</h2>
+            <button class="form__group-remove" type="button">видалити дитину</button>
+
+            <div class="form__row two__columns form__row-margin-70">
+              <div class="form__field">
+                <label>Прізвище <span>*</span></label>
+                <input class="text" type="text" required disabled>
+              </div>
+
+              <div class="form__field">
+                <label>Ім’я <span>*</span></label>
+                <input class="text" type="text" required>
+              </div>
+
+              <div class="form__field">
+                <label>По-батькові <span>*</span></label>
+                <input class="text" type="text" required>
+              </div>
+
+              <div class="form__field">
+                <label>Дата народження <span>*</span></label>
+                <input class="text" type="text" data-toggle="datepicker" required>
+              </div>
+
+              <div class="form__field">
+                <label>Стать <span>*</span></label>
+                <select class="js-choice" name="select" required>
+                  <option value="" selected>Обрати</option>
+                  <option>Чоловіча</option>
+                  <option>Жіноча</option>
+                </select>
+              </div>
+              <div class="form__field">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" required>
+                  <span class="checkbox__box"></span>
+                  <div class="checkbox__text">Наявність інвалідності</div>
+                </label>
+              </div>
+            </div>
+
+            <div class="form__row form__row-margin-70">
+              <div class="form__field">
+                <label>Документи, що підтверджують статус <span>*</span></label>
+
+                <div class="file-wrapper file-wrapper__info-small">
+                  <div class="file-info">
+                    <div class="file-info__text">
+                      <p>завантажте до 3-х файліів (jpg, png до 2Мб)</p>
+                    </div>
+
+                    <div class="file-info__file">
+                      <div class="content__file content__file--download">
+                        <span class="content__file-icon"></span>
+                        <span class="content__file-text">93579296_165669858016624.jpg</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="file-btn">
+                    <label class="file-btn__label">
+                      <input type="file" name="doc" id="doc" multiple required>
+                      <div>Прикріпити</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__field">
+                <label>Документи, що підтверджують статус <span>*</span></label>
+
+                <div class="file-wrapper file-wrapper__info-small">
+                  <div class="file-info">
+                    <div class="file-info__text">
+                      <p>завантажте до 3-х файліів (jpg, png до 2Мб)</p>
+                    </div>
+                  </div>
+
+                  <div class="file-btn">
+                    <label class="file-btn__label">
+                      <input type="file" name="doc" id="doc" multiple required>
+                      <div>Прикріпити</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <button class="btn btn__add">Додати ще одну дитину</button>
+      </div>
+
+      
+      <h2>Інформація про доставку</h2>
+
+      <div class="form__group">
+        <div class="form__group-inner">
+          <div class="form__row two__columns">
+            <div class="form__field">
+              <label class="checkbox">
+                <input class="checkbox__input" type="checkbox" required>
+                <span class="checkbox__box"></span>
+                <div class="checkbox__text">Чи є поруч з Вами працююче відділення Нової пошти</div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form__group">
+        <div class="form__group-inner">
+          <h3>Нова пошта</h3>
+          <div class="form__row two__columns">
+            <div class="form__field">
+              <label>Область <span>*</span></label>
+              <input class="text" type="text" required disabled>
+            </div>
+
+            <div class="form__field">
+              <label>Район <span>*</span></label>
+              <input class="text" type="text" required>
+            </div>
+
+            <div class="form__field">
+              <label>Населений пункт <span>*</span></label>
+              <input class="text" type="text" required>
+            </div>
+
+            <div class="form__field">
+              <label>Номер відділення <span>*</span></label>
+              <input class="text" type="text" required>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form__group">
+        <div class="form__group-inner">
+          <h3>Інформація про доставку</h3>
+          <div class="form__row two__columns">
+            <div class="form__field">
+              <label>Індекс <span>*</span></label>
+              <input class="text" type="text" required disabled>
+            </div>
+
+            <div class="form__field">
+              <label>Область <span>*</span></label>
+              <input class="text" type="text" required>
+            </div>
+
+            <div class="form__field">
+              <label>Район <span>*</span></label>
+              <input class="text" type="text" required>
+            </div>
+
+            <div class="form__field">
+              <label>Населений пункт <span>*</span></label>
+              <input class="text" type="text" required>
+            </div>
+
+            <div class="form__field">
+              <label>Вулиця <span>*</span></label>
+              <input class="text" type="text" required>
+            </div>
+            <div class="form__field">
+              <label>Будинок <span>*</span></label>
+              <input class="text" type="text" required>
+            </div>
+            <div class="form__field">
+              <label>Під’їзд <span>*</span></label>
+              <input class="text" type="text" required>
+            </div>
+            <div class="form__field">
+              <label>Поверх <span>*</span></label>
+              <input class="text" type="text" required>
+            </div>
+            <div class="form__field">
+              <label>Квартира <span>*</span></label>
+              <input class="text" type="text" required>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form__group">
+        <h3>Канал зв’язку</h3>
+        <div class="form__group-inner">
+          <div class="form__row two__columns">
+            <div class="form__field">
+              <label>Оберіть бажаний варіант зв’язку з вами <span>*</span></label>
+              <select class="js-choice" name="select" required>
+                <option value=""></option>
+                <option>Телефонний дзвінок</option>
+                <option>Telegram</option>
+                <option>Viber</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn__color btn__send" type="submit">відправити</button>
+    </div>
+  </div>
+
+  <div id="alert" class="allert__info hide">Блок для інформаційного повідомлення</div>
+</main>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+    integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"
+    integrity="sha512-RCgrAvvoLpP7KVgTkTctrUdv7C6t7Un3p1iaoPr1++3pybCyCsCZZN7QEHMZTcJTmcJ7jzexTO+eFpHk4OCFAg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+  <script src="js/index.js"></script>
+  </body>
+
+  </html>

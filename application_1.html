@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#113352">
+  <title>Club_Dobrodiiv_form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css"
+    integrity="sha512-YdYyWQf8AS4WSB0WWdc3FbQ3Ypdm0QCWD2k4hgfqbQbRCJBEgX0iAegkl2S1Evma5ImaVXLBeUkIlP6hQ1eYKQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a class="header__logo" href="#"><img class="header__logo" src="img/logo.svg" alt="логотип"></a>
+      <a class="header__link" href="#">Повернутись<br> на сайт</a>
+    </div>
+  </div>
+</header>
+
+
+<main class="main">
+
+  <div class="container">
+    <h1>Заявка на отримання допомоги</h1>
+
+    <div class="content">
+      <p>
+        За даними ООН, до кінця 2022 року приблизно 18 мільйонів жителів України потребуватимуть гуманітарної допомоги.
+      </p>
+      <p>
+        Турбота — ключова цінність Клубу Добродіїв і ми готові підставити плече підтримки вашій родині в цей непростий
+        для українців час.
+      </p>
+      <p>
+        Щоб бути ефективними і оперативно надавати допомогу, ми сфокусувались на допомозі наступним категоріям родин із
+        дітьми:
+      </p>
+      <ul>
+        <li>виховують дітей самостійно (одинокі мами, татусі, опікуни);</li>
+        <li>виїхали з прифронтових районів або з тимчасово окупованих територій;</li>
+        <li>проживають в прифронтових районах.</li>
+      </ul>
+      <p>
+        Якщо це про вас, заповніть, будь ласка, анкету і ми допоможемо вам (не заповнюйте анкету більш ніж 1 раз)
+      </p>
+      <p>
+        Дякуємо і обіймаємо міцно вашу родину!
+      </p>
+    </div>
+
+    <div class="form">
+      <div class="form__group">
+        <h3>Ідентифікація особи</h3>
+    
+        <div class="form__group-inner">
+          <div class="form__row two__columns form__row-margin-40">
+            <div class="form__field">
+              <label>Ваш телефон <span>*</span></label>
+              <input class="input__phone text" type="tel" name="phone" placeholder="+_ _ _ (_ _) _ _ _-_ _-_ _" required>
+            </div>
+          </div>
+
+          <div class="form__row two__columns form__row-margin-100">
+            <div class="form__field">
+              <label>Прізвище <span>*</span></label>
+              <input class="text" type="text" required disabled>
+            </div>
+
+            <div class="form__field">
+              <label>Ім’я <span>*</span></label>
+              <input class="text" type="text" required>
+            </div>
+
+            <div class="form__field">
+              <label>По-батькові <span>*</span></label>
+              <input class="text" type="text" required>
+            </div>
+
+            <div class="form__field">
+              <label>Email <span>*</span></label>
+              <input class="text" type="text" required>
+            </div>
+
+            <div class="form__field">
+              <label>Категорія родини <span>*</span></label>
+              <select class="js-choice" name="select" required>
+                <option value="" selected></option>
+                <option>Виховую дітей самостійно</option>
+                <option>Вихали з прифронтових або тимчасово окупованих територій </option>
+                <option>Інше</option>
+              </select>
+            </div>
+
+            <div class="form__field">
+              <label>Кількість дітей <span>*</span></label>
+              <div class="quantity__block">
+                <button class="quantity__arrow quantity__arrow--plus" type="button"></button>
+                <input class="quantity__number number" type="number" min="0" max="100" step="1" value="">
+                <button class="quantity__arrow quantity__arrow--minus" type="button"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="form__field">
+            <button class="btn btn__color position-right" type="submit">відправити</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="alert__info" class="allert__info hide">Блок для інформаційного повідомлення</div>
+
+</main>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+    integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"
+    integrity="sha512-RCgrAvvoLpP7KVgTkTctrUdv7C6t7Un3p1iaoPr1++3pybCyCsCZZN7QEHMZTcJTmcJ7jzexTO+eFpHk4OCFAg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+  <script src="js/index.js"></script>
+  </body>
+
+  </html>
